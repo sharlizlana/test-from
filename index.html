@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Belajar form</title>
+</head>
+<body>
+    <div class="container">
+      <form id="biodataForm" action="" method="post">
+        <h1>Formulir biodata diri</h1>
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" placeholder="Masukan nama lengkap" required />
+        <label for="alamat">Alamat</label>
+        <input type="text" id="alamat" placeholder="Masukan Alamat" required/>
+        <label for="keterangan">Keterangan</label>
+        <input type="text" id="Description" placeholder="Masukan keterangan" required/>
+
+        <label for="country">Negara</label>
+        <select name="country" id="country">
+          <option value="Indonesia">Indonesia</option>
+          <option value="Korea">Korea</option>
+          <option value="Australia">Australia</option>
+        </select>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender" name="gender" value="male" required> Male
+        <input type="radio" id="gender" name="gender" value="female" required> Female
+        <br>
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" id="hobbies" name="hobbies" value="Art"> Art
+        <input type="checkbox" id="hobbies" name="hobbies" value="music"> Music
+        <input type="checkbox" id="hobbies" name="hobbies" value="Fashion"> Fashion
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+       
+    </div>
+
+    <div class="container-output" id="output">
+      <ul>
+        <li id="username-output"></li>
+        <li id="alamat-output"></li>
+        <li id="keterangan-output"></li>
+        <li id="country-output"></li>
+        <li id="gender-output"></li>
+        <li id="hobbies-output"></li>
+      </ul>
+    </div>
+
+    <script src="function.js"></script>
+  </body>
+</html>

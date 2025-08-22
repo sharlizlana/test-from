@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container-output {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=text], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid pink;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button{
+    width: 100%;
+    background-color: plum;
+    color: aliceblue;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(244, 184, 244);
+}
